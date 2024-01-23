@@ -3,7 +3,7 @@ import Logements from '/logements.json'
 
 export default function Gallery() {
     return (
-        <main>
+        <section className='main-logements'>
             <div className="gallery">
                 {
                     Logements.map(logement => (
@@ -14,7 +14,7 @@ export default function Gallery() {
                     ))
                 }
             </div>
-        </main>
+        </section>
     )
     
 }

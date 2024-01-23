@@ -1,6 +1,5 @@
 import { NavLink } from "react-router-dom";
 import logo from "/src/assets/images/logo.png";
-import banner from "/src/assets/images/banner.png";
 
 export default function Header() {
   return (
