@@ -212,3 +212,23 @@ header {
     margin-bottom: 20px;
   }
 }
+
+.collapse-wrapper{
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+.collapse {
+  width: 1023px;
+  height: 52px;
+  border-radius: 5px;
+  background-color: #FF6060;
+  display: flex;
+  align-items: center;
+  h2 {
+    font-size: 24px;
+    color: #FFFFFF;
+  }
+}
+}
