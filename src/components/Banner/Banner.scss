@@ -1,0 +1,24 @@
+.banner {
+    width: 86.11%;
+    height: 223px;
+    position: relative;
+    text-align: center;
+    margin: auto;
+    img {
+      border-radius: 25px;
+      height: 223px;
+      width: 100%;
+      object-fit: cover;
+      filter: brightness(80%);
+    }
+    h1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #ffffff;
+      font-size: 48px;
+      font-weight: 500;
+      width: 100%;
+    }
+  }

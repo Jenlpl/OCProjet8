@@ -1,7 +1,7 @@
 import './main.scss'
 import { Routes, Route } from 'react-router-dom';
-import Header from './components/Header'
-import Banner from './components/Banner';
+import Header from './components/Header/Header'
+import Banner from './components/Banner/Banner';
 import Gallery from './components/Gallery';
 import Footer from './components/Footer';
 import Home from './pages/Home';
