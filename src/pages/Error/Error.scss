@@ -1,0 +1,21 @@
+.main-error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    h1 {
+font-size: 288px;
+font-weight: 700;
+color: #FF6060;
+    }
+    .oups {
+        color: #FF6060;
+        font-size: 36px;
+    }
+    .return {
+        font-size: 18px;
+        text-decoration: underline;
+        margin-bottom: 110px;
+        margin-top: 30px;
+    }
+}

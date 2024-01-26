@@ -8,17 +8,20 @@ export default function Banner() {
   const location = useLocation();
   const { pathname } = location;
   let bannerImage;
+let showText = true;
+
 
   if (pathname === '/') {
     bannerImage = BannerHome;
   } else if (pathname === '/about') {
     bannerImage = BannerAbout;
+    showText = false;
   }
 
     return (
         <div className="banner">
         <img src={bannerImage} alt="banner" />
-        <h1>Chez vous, partout et ailleurs</h1>
+        {showText && <h1>Chez vous, partout et ailleurs</h1>}
       </div>
     )
 }

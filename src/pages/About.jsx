@@ -1,8 +1,14 @@
+import Banner from "../components/Banner/Banner";
 import Collapse from "../components/Collapse/Collapse";
 
+
 export default function About() {
+
+  const currentPage = window.location.pathname;
+
   return (
     <main className="about">
+      <Banner page={currentPage} />
       <Collapse
         title="Fiabilité"
         content="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les

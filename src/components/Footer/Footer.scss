@@ -1,0 +1,15 @@
+.footer {
+    height: 209px;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    gap: 40px;
+    p {
+      font-size: 24px;
+      color: #ffffff;
+      padding-bottom: 25px;
+      margin: unset;
+    }
+  }
