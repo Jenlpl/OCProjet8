@@ -1,8 +1,8 @@
 import { NavLink } from "react-router-dom";
 import logo from "/src/assets/images/logo.png";
 
-
 export default function Header() {
+
   return (
     <header>
       <nav className="navbar">

@@ -3,102 +3,56 @@
 @import 'components/Gallery/Gallery.scss';
 @import 'components/Collapse/Collapse.scss';
 @import 'components/Footer/Footer.scss';
+@import 'pages/Home/Home.scss';
 @import 'pages/Error/Error.scss';
 
-
-/* Box sizing rules */
-*,
-*::before,
-*::after {
+/* Because the default box-sizing is stupid... */
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
-/* Prevent font size inflation */
-html {
-  -moz-text-size-adjust: none;
-  -webkit-text-size-adjust: none;
-  text-size-adjust: none;
-}
-
-/* Remove default margin in favour of better control in authored CSS */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-dl,
-dd {
+* {
   margin: 0;
 }
 
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role="list"],
-ol[role="list"] {
-  list-style: none;
+/* #root and #__next cover my usual frameworks - Optional if you arent using one! */
+html, body, #root, #__next {
+  height: 100%;
 }
 
-/* Set core body defaults */
 body {
-  min-height: 100vh;
-  line-height: 1.5;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+  /* Optional but I like to apply a base font always */
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; 
 }
 
-/* Set shorter line heights on headings and interactive elements */
-h1,
-h2,
-h3,
-h4,
-button,
-input,
-label {
-  line-height: 1.1;
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
 }
 
-/* Balance text wrapping on headings */
-h1,
-h2,
-h3,
-h4 {
-  text-wrap: balance;
+/* Stop long words causing overflow */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
 }
 
-/* A elements that don't have a class get default styles */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-  color: currentColor;
-}
-
-/* Make images easier to work with */
-img,
-picture {
-  max-width: 100%;
+img, picture, video, canvas, svg {
   display: block;
+  max-width: 100%;
 }
 
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
+input, button, textarea, select {
   font: inherit;
 }
 
-/* Make sure textarea without a rows attribute are not tiny */
-textarea:not([rows]) {
-  min-height: 10em;
-}
-
-/* Anything that has been anchored to should have extra scroll margin */
-:target {
-  scroll-margin-block: 5ex;
-}
-
 #root {
-  margin: auto;
-  max-width: 1440px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+    align-items: center;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
 }

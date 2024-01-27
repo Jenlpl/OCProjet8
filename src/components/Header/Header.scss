@@ -1,17 +1,16 @@
 header {
     display: flex;
     align-items: center;
-    width: 86.11%;
-    margin: auto;
+    width: 86%;
+    margin: 50px auto;
   .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin: 50px auto;
     ul {
       display: flex;
-      flex-direction: row;
+      align-items: center;
       list-style: none;
       gap: 57px;
       font-size: 24px;
@@ -23,56 +22,34 @@ header {
     li a.active {
       text-decoration: underline;
     }
-  }
-  
-  .logo {
-    width: 210px;
-    height: 68px;
-    img {
-      object-fit: cover;
-      width: 210px;
-      height: 68px;
+    .logo {
+      height: 100%;
+      img {
+        object-fit: cover;
+        width: 100%;
+      }
     }
   }
-}
+  }
+  
 
-@media screen and (max-width: 375px) {
-  header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-     width: 89.33%;
-  .navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin: 50px auto;
-    ul {
-      display: flex;
-      flex-direction: row;
-      list-style: none;
-      gap: 57px;
-      font-size: 24px;
+@media screen and (max-width: 768px) {
+   header {
+    width: 90%;
+margin: 20px auto;
+   .navbar {
+height: 47px;
+     gap: 26px;
+     ul {
+       gap: 26px;
+       font-size: 12px;
+     li a {
+text-transform: uppercase;
     }
-    li a {
-      color: #ff6060;
-      text-decoration: none;
-    }
-    li a.active {
-      text-decoration: underline;
-    }
-  }
-  
-  .logo {
-    width: 210px;
-    height: 68px;
-    img {
-      object-fit: cover;
-      width: 210px;
-      height: 68px;
-    }
-  }
-}
+     }
+   };
+   .logo {
+    width: 145px;
+   }
+ }
 }
