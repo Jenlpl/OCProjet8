@@ -13,7 +13,6 @@ export default function Collapse({title, content}) {
   };
 
   return (
-    <div className="collapse-wrapper">
       <div className="collapse">
         <div className="h2-button">
           <h2>{title}</h2>
@@ -34,8 +33,6 @@ export default function Collapse({title, content}) {
               {content}
             </p>
         </div>
-      </div>
-      
-    </div>
+      </div>  
   );
 }

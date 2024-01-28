@@ -1,5 +1,5 @@
-import Banner from "../components/Banner/Banner";
-import Collapse from "../components/Collapse/Collapse";
+import Banner from "../../components/Banner/Banner";
+import Collapse from "../../components/Collapse/Collapse";
 
 
 export default function About() {
@@ -7,8 +7,9 @@ export default function About() {
   const currentPage = window.location.pathname;
 
   return (
-    <main className="about">
+    <>
       <Banner page={currentPage} />
+      <main className="collapse-wrapper">
       <Collapse
         title="Fiabilité"
         content="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les
@@ -36,5 +37,6 @@ export default function About() {
             ateliers sur la sécurité domestique pour nos hôtes."
       />
     </main>
+    </>
   );
 }
