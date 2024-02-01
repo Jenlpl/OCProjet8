@@ -2,11 +2,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import { useState, useRef } from "react";
 
+
 export default function Collapse({title, content}) {
   const [isActive, setIsActive] = useState(false);
 
   const parentRef = useRef();
-
 
   const toggleCollapse = () => {
     setIsActive(!isActive);

@@ -4,10 +4,11 @@
 @import 'components/Collapse/Collapse.scss';
 @import 'components/Footer/Footer.scss';
 @import 'pages/Home/Home.scss';
+@import 'pages/Logement/Logement.scss';
 @import 'pages/Error/Error.scss';
 @import 'components/Carousel/Carousel.scss';
 
-/* Because the default box-sizing is stupid... */
+
 *, *::before, *::after {
   box-sizing: border-box;
 }

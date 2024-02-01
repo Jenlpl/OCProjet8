@@ -21,7 +21,7 @@ function Carousel({ logement }) {
   };
 
   return (
-    <div className="carousel">
+    <section className="carousel">
       {pictures.map((picture, index) => (
         <article
           className={index === currentSlide ? "visible" : "hidden"}
@@ -39,7 +39,7 @@ function Carousel({ logement }) {
       <span>
         {currentSlide + 1}/{pictures.length}
       </span>
-    </div>
+    </section>
   );
 }
 

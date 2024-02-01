@@ -3,21 +3,24 @@
   position: relative;
   align-items: center;
   height: 415px;
-  width: 100%;
+  width: 86%;
+  margin: 0 auto 40px;
   .arrow {
     color: #fff;
     background-color: unset;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
     position: absolute;
   }
   .arrow-right {
     right: 20px;
   }
+  .arrow-left {
+    left: 20px;
+  }
   article {
     display: none;
-    width: 86vw;
+    width: 100%;
     height: 100%;
     &.visible {
       display: block;
