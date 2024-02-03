@@ -21,7 +21,7 @@ let showText = true;
     return (
         <div className="banner">
         <img src={bannerImage} alt="banner" />
-        {showText && <h1>Chez vous, partout et ailleurs</h1>}
+        {showText && <h1>Chez vous,<br /> partout et ailleurs</h1>}
       </div>
     )
 }

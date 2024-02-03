@@ -6,6 +6,8 @@ import arrowRight from "../../assets/images/arrow-right.png";
 function Carousel({ logement }) {
   const pictures = logement.pictures;
 
+  const hideArrows = pictures.length === 1;
+
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const goToPreviousSlide = () => {
@@ -30,6 +32,8 @@ function Carousel({ logement }) {
           <img src={picture} alt={`Slide ${index + 1}`} />
         </article>
       ))}
+     {!hideArrows && (
+      <>
       <button className="arrow arrow-left" onClick={goToPreviousSlide}>
         <img src={arrowLeft} alt="" />
       </button>
@@ -39,6 +43,8 @@ function Carousel({ logement }) {
       <span>
         {currentSlide + 1}/{pictures.length}
       </span>
+      </>
+     )}
     </section>
   );
 }

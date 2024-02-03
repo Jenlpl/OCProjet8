@@ -20,6 +20,7 @@
       font-size: 48px;
       font-weight: 700;
       width: 100%;
+      
     }
   }
 
@@ -27,14 +28,14 @@
     .banner {
       width: 90%;
       height: 111px;
-      margin: 20px auto;
+      margin: 0 auto 20px;
+      text-align: left;
       img {
           border-radius: 10px;
       }
       h1 {
         font-size: 24px;
-        text-align: left;
-        padding-left: 15px;
+        padding-left: 20px;
       }
     }
   }

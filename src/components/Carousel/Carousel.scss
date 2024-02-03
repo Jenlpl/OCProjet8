@@ -4,13 +4,17 @@
   align-items: center;
   height: 415px;
   width: 86%;
-  margin: 0 auto 25px;
+  margin: 5px auto 0;
   .arrow {
     color: #fff;
     background-color: unset;
     border: none;
     cursor: pointer;
     position: absolute;
+    img {
+      width: 100%;
+    height: 100%;
+    }
   }
   .arrow-right {
     right: 20px;
@@ -39,5 +43,24 @@
   transform: translateX(-50%);
   color: #FFFFFF;
   font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .carousel {
+    width: 90%;
+    height: 255px;
+    .arrow {
+      height: 24px;
+    }
+    .arrow-left {
+      left: 0;
+    }
+    .arrow-right {
+      right: 0;
+    }
+    span {
+      display: none;
+    }
   }
 }
